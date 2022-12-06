@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-int function_element_extraction(int value)
+void function_element_extraction(int value)
 {
     if(value != 0) cout<<value%10<<endl;
-    return function_element_extraction(value/10);
+    function_element_extraction(value/10);
 }
 
 int main()
